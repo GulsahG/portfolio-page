@@ -1,0 +1,195 @@
+ /****************************
+ Used some css preset rules from
+ https://github.com/zellwk/css-reset/blob/master/reset.css
+ https://gist.github.com/nknauth/538757/1e4f6294a4a2456c3fa1f535a8e91a9ac884433b
+ ****************************/
+ html {
+    box-sizing: border-box;
+    hyphens: auto;
+    letter-spacing: 0.06em;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern";
+    text-indent: 3.35rem;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  ol,
+  li,
+  p,
+  pre,
+  blockquote,
+  figure,
+  figcaption,
+  hr,
+  dl,
+  dd {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: 'Special Elite', cursive;
+    color: var(--custom-colour);
+  }
+
+  :root {
+    --custom-colour: #1A0903;
+  }
+
+  .light-orange {
+    --custom-colour: #FBAB6A;
+    color: var(--custom-colour);
+  }
+
+  .dark-orange {
+    --custom-colour: #FE8927;
+    color: var(--custom-colour);
+  }
+
+  .darker-orange {
+    --custom-colour: #F48025;
+    color: var(--custom-colour);
+  }
+
+  .brown {
+    --custom-colour: #8C482C;
+    color: var(--custom-colour);
+  }
+
+  .brick {
+    --custom-colour: #7F2611;
+    color: var(--custom-colour);
+  }
+
+  .dark-brown {
+    --custom-colour: #55190B;
+    color: var(--custom-colour);
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  input,
+  textarea,
+  select,
+  button {
+    color: inherit;
+    font: inherit;
+    letter-spacing: inherit;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+  }
+  
+  input,
+  textarea,
+  button {
+    border: 1px solid gray;
+  }
+  
+  button {
+    padding: 0.75em 1em;
+    line-height: inherit;
+    border-radius: 0;
+    background-color: transparent;
+  }
+  
+  button * {
+    pointer-events: none;
+  }
+  
+  img,
+  iframe,
+  video,
+  object,
+  embed {
+    display: block;
+    max-width: 100%;
+  }
+  
+  svg {
+    max-width: 100%;
+  }
+  
+  [hidden] {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  [tabindex="-1"] {
+    outline: none !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    letter-spacing: 0.075em;
+  }
+   
+  p, ul, ol, dl, blockquote, pre, dialog{
+    font-size:1em; /* 13px */
+    line-height:1.3846em; /* 18px */
+    margin:0 0 1.3846em 0;
+  }
+
+  h1 {
+    font-size:2.4615em; /* 32px */
+    line-height:1.125em; /* 36px */
+    margin-top:0.5625em;
+    margin-bottom:0em;
+  }
+
+  h2 {
+    font-size:1.5385em; /* 20px */
+    font-weight:normal;
+    line-height:1.8em; /* 36px */
+    margin-top:0.9em;
+    margin-bottom:0em;
+  }
+
+  h3 {
+    font-size: 1.2308em; /* 16px */
+    line-height: 1.125em; /* 18px */
+    margin-top: 1.125em;
+    margin-bottom: 0em;
+  }
+
+  h4 {
+    font-size:1.0769em; /* 14px */
+    line-height:1.2857em; /* 18px */
+    margin-top:1.2857em;
+    margin-bottom:0em;
+  }
+
+  h5 {
+    font-size:1em; /* 13px */
+    line-height:1.3846em; /* 18px */
+    margin:0;
+  }
+
+  h6 {
+    font-size:1em; /* 13px */
+    font-weight:normal;
+    font-variant:small-caps;
+    letter-spacing:2px;
+    line-height:1.3846em; /* 18px */
+  }

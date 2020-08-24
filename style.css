@@ -9,7 +9,9 @@
     letter-spacing: 0.06em;
     text-rendering: optimizeLegibility;
     font-feature-settings: "kern";
-    text-indent: 3.35rem;
+    text-indent: 3.35vw;
+    overflow-y: scroll; 
+    overflow-x: hidden;
   }
 
   *,
@@ -47,6 +49,12 @@
     line-height: 1.5;
     font-family: 'Special Elite', cursive;
     color: var(--custom-colour);
+    background: black;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
   }
 
   :root {
@@ -65,7 +73,9 @@
 
   .darker-orange {
     --custom-colour: #F48025;
-    color: var(--custom-colour);
+    background: var(--custom-colour);
+    color: black;
+    padding: 0.1vw;
   }
 
   .brown {
@@ -140,56 +150,147 @@
     outline: none !important;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6, nav > ul {
     font-family: 'Merriweather', serif;
+    font-weight: 700;
     letter-spacing: 0.075em;
   }
-   
-  p, ul, ol, dl, blockquote, pre, dialog{
-    font-size:1em; /* 13px */
-    line-height:1.3846em; /* 18px */
-    margin:0 0 1.3846em 0;
+
+  header {
+    margin-top: 10vw;
+    display: flex;
+  }
+  
+  nav {
+    width: 60vw;
+    height: 10vw;
+    margin-top: 27.5vw;
+  }
+  
+  nav > ul {
+    display: flex;
+    margin-left: 20vw;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 3.25vw;
+    padding: 0.2vw;
+    text-indent: 0;
+    border: 0.1vw solid white;
+    border-radius: 0.5em;
+    box-shadow: 0.1vw 0.1vw #7F2611, 0.2vw 0.2vw #7F2611, 0.3vw 0.3vw #7F2611;
+    --custom-colour: #FBAB6A;
+    background: var(--custom-colour);
   }
 
-  h1 {
-    font-size:2.4615em; /* 32px */
-    line-height:1.125em; /* 36px */
-    margin-top:0.5625em;
-    margin-bottom:0em;
+  li {
+    line-height: 1.35;
+    width: 20vw;
+    height: 95%;
+    text-align: center;
+    font-size: 2vw;
+    border: 0vw solid #7F2611;
   }
 
-  h2 {
-    font-size:1.5385em; /* 20px */
-    font-weight:normal;
-    line-height:1.8em; /* 36px */
-    margin-top:0.9em;
-    margin-bottom:0em;
+  a:hover {
+    color: white;
+    font-weight: 300;
   }
 
-  h3 {
-    font-size: 1.2308em; /* 16px */
-    line-height: 1.125em; /* 18px */
-    margin-top: 1.125em;
-    margin-bottom: 0em;
+  .wrapper {
+    display: block;
+    position: absolute;
+    width: 100%;
+    margin: 5vw auto;
   }
 
-  h4 {
-    font-size:1.0769em; /* 14px */
-    line-height:1.2857em; /* 18px */
-    margin-top:1.2857em;
-    margin-bottom:0em;
+  .typing-demo {
+    margin: auto;
+    width: 22vw;
+    margin-top: 2vw;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+    text-indent: 0;
+    border-right: 0.25vw solid;
+    font-size: 2.5vw;
   }
 
-  h5 {
-    font-size:1em; /* 13px */
-    line-height:1.3846em; /* 18px */
-    margin:0;
+  .typing-demo:first-of-type {
+    width: 35vw;
+  }
+  
+  section {
+    color: white;
+    margin-top: 5vw;
   }
 
-  h6 {
-    font-size:1em; /* 13px */
-    font-weight:normal;
-    font-variant:small-caps;
-    letter-spacing:2px;
-    line-height:1.3846em; /* 18px */
+  div {
+    padding: 0.5vw;
+    width: 60vw;
+    display: block;
+    margin: 0 auto;
+  }
+
+  div:hover {
+    border: 0.1vw solid #7F2611;
+  }
+
+  div > h1 {
+    font-size: 2.5vw;
+  }
+
+  #about-me > p {
+    width: 40vw;
+    display: block;
+    font-size: 1.25vw;
+    margin: 1.5vw auto;
+  }
+
+  #about-me > p:last-of-type {
+    width: 50vw;
+  }
+
+  #language {
+    background: 
+  }
+
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .typing-demo {
+      font-size: 3vw;
+    }
+
+    .typing-demo:first-of-type {
+      width: 43vw;
+    }
+
+    nav {
+      margin-top: 35vw;
+    }
+
+    nav > ul {
+      height: 5vw;
+    }
+
+    li {
+      font-size: 2.5vw;
+    }
+
+  }
+  
+  @media only screen and (min-width: 768px) {
+
   }

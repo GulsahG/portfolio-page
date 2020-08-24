@@ -3,6 +3,7 @@
  https://github.com/zellwk/css-reset/blob/master/reset.css
  https://gist.github.com/nknauth/538757/1e4f6294a4a2456c3fa1f535a8e91a9ac884433b
  ****************************/
+
  html {
     box-sizing: border-box;
     hyphens: auto;
@@ -53,7 +54,7 @@
   }
 
   a {
-    color: #000;
+    color: #1A0903;
     text-decoration: none;
   }
 
@@ -73,14 +74,13 @@
 
   .darker-orange {
     --custom-colour: #F48025;
-    background: var(--custom-colour);
-    color: black;
-    padding: 0.1vw;
+    color: var(--custom-colour);
   }
 
   .brown {
     --custom-colour: #8C482C;
-    color: var(--custom-colour);
+    background: var(--custom-colour);
+    padding: 0.1vw;
   }
 
   .brick {
@@ -164,12 +164,13 @@
   nav {
     width: 60vw;
     height: 10vw;
-    margin-top: 27.5vw;
+    display: block;
+    margin: 27vw auto 0 auto;
   }
   
   nav > ul {
     display: flex;
-    margin-left: 20vw;
+    margin-left: auto;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -218,7 +219,7 @@
   }
 
   .typing-demo:first-of-type {
-    width: 35vw;
+    width: 33vw;
   }
   
   section {
@@ -226,15 +227,22 @@
     margin-top: 5vw;
   }
 
-  div {
-    padding: 0.5vw;
+  section > div {
+    padding: 1vw;
     width: 60vw;
     display: block;
     margin: 0 auto;
   }
 
-  div:hover {
-    border: 0.1vw solid #7F2611;
+  section > div:hover {
+    border-width: 0.15vw;
+    border-style: solid;
+    border-image: linear-gradient(
+      to bottom, 
+      #7f2611, 
+      #8c482c,
+      #f48025
+    ) 1 100%;;
   }
 
   div > h1 {
@@ -249,11 +257,7 @@
   }
 
   #about-me > p:last-of-type {
-    width: 50vw;
-  }
-
-  #language {
-    background: 
+    width: 45vw;
   }
 
   @keyframes typing {
@@ -274,7 +278,7 @@
     }
 
     .typing-demo:first-of-type {
-      width: 43vw;
+      width: 41vw;
     }
 
     nav {
@@ -287,6 +291,19 @@
 
     li {
       font-size: 2.5vw;
+    }
+
+    div {
+      width: 70vw;
+    }
+
+    div > h1 {
+      font-size: 4vw;
+    }
+
+    #about-me > p {
+      font-size: 2.5vw;
+      width: 58vw !important;
     }
 
   }

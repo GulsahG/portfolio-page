@@ -289,7 +289,6 @@
   .project-img {
     width: 39vw;
     height: 22vw;
-    padding: 1vw;
     margin-bottom: 2vw;
   }
 
@@ -316,7 +315,7 @@
     cursor: pointer;
     color: white;
     position: relative;
-    padding: 1.5vw;
+    padding: 1vw;
     font-weight: bold;
     font-size: 20px;
     transition: 0.6s ease;
@@ -421,8 +420,8 @@
     }
 
     .project-img {
-      width: 63.2vw;
-      height: 35.9vw;
+      width: 57.15vw;
+      height: 32.25vw;
     }
 
     .project-description > p {

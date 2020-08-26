@@ -2,8 +2,11 @@
  Used some css preset rules from
  https://github.com/zellwk/css-reset/blob/master/reset.css
  https://gist.github.com/nknauth/538757/1e4f6294a4a2456c3fa1f535a8e91a9ac884433b
- ****************************/
 
+ Used animations from
+ https://www.csswand.dev/?ref=producthunt
+ https://codepen.io/denic/pen/GRoOxbM
+ ****************************/
  html {
     box-sizing: border-box;
     hyphens: auto;
@@ -24,6 +27,7 @@
   body,
   h1,
   h2,
+  h2 > a,
   h3,
   h4,
   h5,
@@ -53,7 +57,7 @@
     background: black;
   }
 
-  a {
+  li > a {
     color: #1A0903;
     text-decoration: none;
   }
@@ -150,7 +154,7 @@
     outline: none !important;
   }
 
-  h1, h2, h3, h4, h5, h6, nav > ul {
+  h1, h2, h3, h4, h5, h6, nav > ul, h2 > a {
     font-family: 'Merriweather', serif;
     font-weight: 700;
     letter-spacing: 0.075em;
@@ -193,7 +197,7 @@
     border: 0vw solid #7F2611;
   }
 
-  a:hover {
+  li > a:hover {
     color: white;
     font-weight: 300;
   }
@@ -231,7 +235,7 @@
     padding: 1vw;
     width: 60vw;
     display: block;
-    margin: 0 auto;
+    margin: 2.5vw auto;
   }
 
   section > div:hover {
@@ -246,7 +250,16 @@
   }
 
   div > h1 {
+    font-size: 2.75vw;
+  }
+
+  div > h2 {
     font-size: 2.5vw;
+  }
+
+  div > h2 > a {
+    color: white;
+    text-decoration: none;
   }
 
   #about-me > p {
@@ -258,6 +271,99 @@
 
   #about-me > p:last-of-type {
     width: 45vw;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    height: 32vw;
+    align-items: center;
+  }
+
+  .slide-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .project-img {
+    width: 39vw;
+    height: 22vw;
+    padding: 1vw;
+    margin-bottom: 2vw;
+  }
+
+  .project-description > p {
+    text-indent: 0;
+    margin-top: 1vw;
+    width: 42vw;
+    font-family: 'Judson', serif;
+  }
+
+  .hidden {
+    position: absolute;
+    width: 1px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  button {
+    cursor: pointer;
+    color: white;
+    position: relative;
+    padding: 1.5vw;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    text-decoration: none;
+    -webkit-user-select: none;
+  }
+
+  button:hover {
+    background: #FBAB6A;
+    color: #1A0903;
+  }
+
+  .project-description > h2 {
+    transition: all 0.2s ease-in-out;
+  }
+
+  .project-description > h2 > a:hover {
+    cursor: pointer;
+    color: #FBAB6A;
+  }
+
+  .project-description > h2:hover {
+    animation: swing 1s ease;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes swing {
+    15% {
+    transform: translateX(5px);
+    }
+    30% {
+    transform: translateX(-5px);
+    }
+    50% {
+    transform: translateX(3px);
+    }
+    65% {
+    transform: translateX(-3px);
+    }
+    80% {
+    transform: translateX(2px);
+    }
+    100% {
+    transform: translateX(0);
+    }
   }
 
   @keyframes typing {
@@ -301,13 +407,31 @@
       font-size: 4vw;
     }
 
+    div > h2 {
+      font-size: 3.75vw;
+    }
+
     #about-me > p {
       font-size: 2.5vw;
       width: 58vw !important;
     }
 
-  }
-  
-  @media only screen and (min-width: 768px) {
+    .project {
+      width: 85vw;
+    }
+
+    .project-img {
+      width: 63.2vw;
+      height: 35.9vw;
+    }
+
+    .project-description > p {
+      font-size: 2.75vw;
+      width: 75vw;
+    }
+
+    #my-work {
+      width: 85vw;
+    }
 
   }

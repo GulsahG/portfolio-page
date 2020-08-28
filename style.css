@@ -224,7 +224,7 @@
   }
 
   .typing-demo:first-of-type {
-    width: 33vw;
+    width: 36.5vw;
   }
   
   section {
@@ -413,11 +413,13 @@
     text-indent: 0;
     align-content: center;
     justify-content: center;
+    width: 60vw;
   }
 
-  .social-media > li{
+  .social-media > li {
     display: inline-block;
     vertical-align: middle;
+    width: 10vw;
   }
 
   svg {
@@ -500,7 +502,7 @@
     }
 
     .typing-demo:first-of-type {
-      width: 41vw;
+      width: 46vw;
     }
 
     nav {

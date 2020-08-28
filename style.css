@@ -16,6 +16,7 @@
     text-indent: 3.35vw;
     overflow-y: scroll; 
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 
   *,
@@ -202,7 +203,7 @@
     font-weight: 300;
   }
 
-  .wrapper {
+  #wrapper {
     display: block;
     position: absolute;
     width: 100%;
@@ -228,14 +229,14 @@
   
   section {
     color: white;
-    margin-top: 5vw;
+    height: 100vh;
   }
 
   section > div {
-    padding: 1vw;
+    padding: 6vw 0.5vw 0.5vw 0.5vw;
     width: 60vw;
     display: block;
-    margin: 2.5vw auto;
+    margin: 0 auto 7.5vw auto;
   }
 
   section > div:hover {
@@ -246,7 +247,22 @@
       #7f2611, 
       #8c482c,
       #f48025
-    ) 1 100%;;
+    ) 1 100%;
+  }
+
+  hr {
+    border: 0;
+    height: 0.4vw;
+    width: 60vw;
+    background:  linear-gradient(
+      to bottom,
+      #FBAB6A,
+      #8C482C,
+      #7f2611,
+      #55190B
+    );
+    margin: 5vw auto;
+    opacity: 0.5;
   }
 
   div > h1 {
@@ -266,6 +282,7 @@
     width: 40vw;
     display: block;
     font-size: 1.25vw;
+    text-indent: 0;
     margin: 1.5vw auto;
   }
 
@@ -311,11 +328,12 @@
     white-space: nowrap;
   }
 
-  button {
+  .slide-img > button {
     cursor: pointer;
     color: white;
     position: relative;
     padding: 1vw;
+    margin: 0 0.5vw;
     font-weight: bold;
     font-size: 20px;
     transition: 0.6s ease;
@@ -325,7 +343,7 @@
     -webkit-user-select: none;
   }
 
-  button:hover {
+  .slide-img > button:hover {
     background: #FBAB6A;
     color: #1A0903;
   }
@@ -342,6 +360,93 @@
   .project-description > h2:hover {
     animation: swing 1s ease;
     animation-iteration-count: 1;
+  }
+
+  .scroll-up {
+    border: solid white;
+    color: white;
+    cursor: pointer;
+    border-width: 0 0.3vw 0.3vw 0;
+    display: block;
+    position: fixed;
+    bottom: 10vw;
+    left: 90vw;
+    padding: 0.3vw;
+    margin: 0 0 0 0.45vw;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .scroll-up:first-of-type {
+    border-width: 0 0.6vw 0.6vw 0;
+    animation: swingY 2s ease infinite;
+    padding: 0.6vw;
+    bottom: 12vw;
+    margin: 0;
+  }
+
+  .scroll-up:hover {
+    border-color: #FBAB6A;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+
+  #contacts {
+    border-width: 0;
+    position: relative;
+    bottom: 0;
+  }
+
+  #contacts > h3 {
+    text-align: center;
+    text-indent: 0;
+    margin-bottom: 5vw;
+    font-size: 2vw;
+  }
+
+  .social-media {
+    display: flex;
+    text-indent: 0;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .social-media > li{
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  svg {
+    stroke: white;
+    padding: 0.2vw;
+    width: 7.5vw;
+    cursor: pointer;
+    transition: 0.4s ease;
+  }
+
+  h3 > svg {
+    cursor: auto;
+  }
+
+  svg:hover {
+    stroke: #f48025;
+  }
+
+  h3 > svg:hover {
+    stroke: white;
+  }
+
+  #discord {
+    transition: 0.4s ease;
+    padding: 0.1vw;
+  }
+  
+  #discord > svg > path:hover {
+    fill: #f48025;
   }
 
   @keyframes swing {
@@ -362,6 +467,18 @@
     }
     100% {
     transform: translateX(0);
+    }
+  }
+
+  @keyframes swingY {
+    0% {
+      transform: translateY(-2vw) rotate(-135deg);
+    }
+    50% {
+      transform: translateY(2vw) rotate(-135deg);
+    }
+    100% {
+      transform: translateY(-2vw) rotate(-135deg);
     }
   }
 
@@ -431,6 +548,26 @@
 
     #my-work {
       width: 85vw;
+      margin-bottom: 35vw;
+    }
+
+    .scroll-up:last-of-type {
+      padding: 0.5vw;
+      left: 90.5vw;
+      border-width: 0 0.5vw 0.5vw 0;
+      position: fixed;
+      margin-bottom: 30vh;
+    }
+
+    .scroll-up:first-of-type {
+      padding: 1vw;
+      border-width: 0 1vw 1vw 0;
+      position: fixed;
+      margin-bottom: 30vh;
+    }
+
+    #contacts > h3 {
+      font-size: 2.5vw;
     }
 
   }

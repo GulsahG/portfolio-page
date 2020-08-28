@@ -3,6 +3,10 @@ const prevButtons = document.querySelectorAll('.prev');
 const nextButtons = document.querySelectorAll('.next');
 const firstProject = document.querySelector('.first');
 const lastProject = document.querySelector('.last');
+const discord = document.querySelector('#discord');
+const instagram = document.querySelector('#instagram');
+const codepen = document.querySelector('#codepen');
+const github = document.querySelector('#github');
 
 projects.forEach(project => {
     project.classList.contains('first') ? project.classList.add('active')
@@ -35,4 +39,18 @@ prevButtons.forEach(button => {
     });
 });
 
+discord.addEventListener("click", function(){
+    window.open("https://discord.bio/p/gulsahgenc");
+});
 
+instagram.addEventListener("click", function(){
+    window.open("https://www.instagram.com/gulshgnc/");
+});
+
+github.addEventListener("click", function(){
+    window.open("https://github.com/GulsahG/");
+});
+
+codepen.addEventListener("click", function(){
+    window.open("https://codepen.io/GulsahG/#");
+});

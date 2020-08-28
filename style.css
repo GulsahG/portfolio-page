@@ -357,7 +357,7 @@
   }
 
   .project-description > h2:hover {
-    animation: swing 1s ease;
+    animation: swingX 0.75s ease;
     animation-iteration-count: 1;
   }
 
@@ -450,7 +450,7 @@
     fill: #f48025;
   }
 
-  @keyframes swing {
+  @keyframes swingX {
     15% {
     transform: translateX(5px);
     }

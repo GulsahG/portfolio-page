@@ -182,7 +182,7 @@
     height: 3.25vw;
     padding: 0.2vw;
     text-indent: 0;
-    border: 0.1vw solid white;
+    border: 0.1vw solid #FBAB6A;
     border-radius: 0.5em;
     box-shadow: 0.1vw 0.1vw #7F2611, 0.2vw 0.2vw #7F2611, 0.3vw 0.3vw #7F2611;
     --custom-colour: #FBAB6A;
@@ -255,11 +255,10 @@
     height: 0.4vw;
     width: 60vw;
     background:  linear-gradient(
-      to bottom,
-      #FBAB6A,
-      #8C482C,
-      #7f2611,
-      #55190B
+      to right,
+      #7f2611, 
+      #8c482c,
+      #f48025
     );
     margin: 5vw auto;
     opacity: 0.5;

@@ -11,14 +11,14 @@ const github = document.querySelector('#github');
 // makes the first project active, others hidden
 projects.forEach(project => {
     project.classList.contains('first') ? project.classList.add('active')
-    : project.classList.add('hidden');
+        : project.classList.add('hidden');
 });
 
 // makes the next project active on button click
 nextButtons.forEach(button => {
     const project = button.parentElement.parentElement;
-    
-    button.addEventListener("click", function(){
+
+    button.addEventListener("click", function () {
         project.classList.toggle('active');
         project.classList.add('hidden');
 
@@ -31,11 +31,11 @@ nextButtons.forEach(button => {
 // makes the prev project active on button click
 prevButtons.forEach(button => {
     const project = button.parentElement.parentElement;
-    
-    button.addEventListener("click", function(){
+
+    button.addEventListener("click", function () {
         project.classList.toggle('active');
         project.classList.add('hidden');
-        
+
         let prevProject = project == firstProject ? lastProject : project.previousElementSibling;
         prevProject.classList.toggle('hidden');
         prevProject.classList.add('active');
@@ -43,18 +43,18 @@ prevButtons.forEach(button => {
 });
 
 /* opens the related social medias on click */
-discord.addEventListener("click", function(){
+discord.addEventListener("click", function () {
     window.open("https://discord.bio/p/gulsahgenc");
 });
 
-instagram.addEventListener("click", function(){
+instagram.addEventListener("click", function () {
     window.open("https://www.instagram.com/gulshgnc/");
 });
 
-github.addEventListener("click", function(){
+github.addEventListener("click", function () {
     window.open("https://github.com/GulsahG/");
 });
 
-codepen.addEventListener("click", function(){
+codepen.addEventListener("click", function () {
     window.open("https://codepen.io/GulsahG/#");
 });

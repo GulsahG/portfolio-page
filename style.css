@@ -185,6 +185,7 @@
    margin-left: auto;
    align-items: center;
    justify-content: center;
+   vertical-align: middle;
    width: 100%;
    height: 3.25vw;
    padding: 0.2vw;
@@ -197,7 +198,7 @@
  }
 
  li {
-   line-height: 1.35;
+   line-height: 1.5;
    width: 20vw;
    height: 95%;
    text-align: center;
@@ -556,6 +557,7 @@
    .project-img {
      width: 57.15vw;
      height: 32.25vw;
+     margin-bottom: 15vw;
    }
 
    .project-description>p {
@@ -566,6 +568,10 @@
    #my-work {
      width: 85vw;
      margin-bottom: 40vw;
+   }
+
+   #about-me {
+     width: 85vw;
    }
 
    .scroll-up:last-of-type {

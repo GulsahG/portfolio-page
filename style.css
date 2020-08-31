@@ -236,7 +236,7 @@
 
  section {
    color: white;
-   height: 100vh;
+   min-height: 100vh;
  }
 
  section>div {
@@ -283,7 +283,7 @@
  #about-me>p {
    width: 40vw;
    display: block;
-   font-size: 1.25vw;
+   font-size: 1.4vw;
    text-indent: 0;
    margin: 1.5vw auto;
  }
@@ -314,7 +314,7 @@
  .project-description>p {
    text-indent: 0;
    margin-top: 1vw;
-   width: 42vw;
+   width: 45vw;
    font-family: 'Judson', serif;
  }
 
@@ -580,5 +580,28 @@
 
    #contacts>h3 {
      font-size: 2.5vw;
+     margin-bottom: 1.5vw;
+   }
+ }
+
+ @media only screen and (min-width: 769px) and (max-width: 1000px) {
+   section>div {
+     margin-bottom: 5vw;
+   }
+
+   #my-work {
+    margin-bottom: 12.5vw;
+   }
+
+   .project-description>p {
+     width: 52vw;
+   }
+
+   #contacts>h3 {
+     margin-bottom: 0.5vw;
+   }
+
+   svg {
+     width: 5vw;
    }
  }

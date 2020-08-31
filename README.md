@@ -5,4 +5,4 @@
 
 ## Installation
 
-* You can see the website live [here](https://github.com/GulsahG/portfolio-page) 
+* You can see the website live [here](https://gulsahg.github.io/portfolio-page/) 

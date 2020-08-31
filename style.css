@@ -347,6 +347,10 @@
    -webkit-user-select: none;
  }
 
+ .slide-img>.prev {
+  border-radius: 3px 0 0 3px;
+ }
+
  .slide-img>button:hover {
    background: #FBAB6A;
    color: #1A0903;

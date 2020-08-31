@@ -8,11 +8,13 @@ const instagram = document.querySelector('#instagram');
 const codepen = document.querySelector('#codepen');
 const github = document.querySelector('#github');
 
+// makes the first project active, others hidden
 projects.forEach(project => {
     project.classList.contains('first') ? project.classList.add('active')
     : project.classList.add('hidden');
 });
 
+// makes the next project active on button click
 nextButtons.forEach(button => {
     const project = button.parentElement.parentElement;
     
@@ -26,6 +28,7 @@ nextButtons.forEach(button => {
     });
 });
 
+// makes the prev project active on button click
 prevButtons.forEach(button => {
     const project = button.parentElement.parentElement;
     
@@ -39,6 +42,7 @@ prevButtons.forEach(button => {
     });
 });
 
+/* opens the related social medias on click */
 discord.addEventListener("click", function(){
     window.open("https://discord.bio/p/gulsahgenc");
 });

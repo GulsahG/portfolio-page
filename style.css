@@ -235,7 +235,11 @@
  .typing-demo:first-of-type {
    width: 36.5vw;
  }
-
+ 
+ .typing-demo:last-of-type {
+   display: none;
+ }
+ 
  section {
    color: white;
    min-height: 100vh;

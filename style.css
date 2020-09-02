@@ -220,7 +220,7 @@
 
  .typing-demo {
    margin: auto;
-   width: 22vw;
+   width: 18.5vw;
    margin-top: 2%;
    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
    white-space: nowrap;
@@ -515,6 +515,7 @@
  @media only screen and (max-width: 768px) {
    .typing-demo {
      font-size: 3vw;
+     width: 23vw;
    }
 
    .typing-demo:first-of-type {

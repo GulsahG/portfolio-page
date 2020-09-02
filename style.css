@@ -50,6 +50,7 @@
 
  body {
    min-height: 100vh;
+   height: calc(var(--vh, 1vh) * 100);
    scroll-behavior: smooth;
    text-rendering: optimizeSpeed;
    line-height: 1.5;
@@ -238,6 +239,7 @@
  section {
    color: white;
    min-height: 100vh;
+   height: calc(var(--vh, 1vh) * 100);
  }
 
  section>div {

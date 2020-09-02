@@ -177,7 +177,7 @@
    width: 60vw;
    height: 10vw;
    display: block;
-   margin: 27vw auto 0 auto;
+   margin: 27% auto 0 auto;
  }
 
  nav>ul {
@@ -580,14 +580,14 @@
      left: 90.5vw;
      border-width: 0 0.5vw 0.5vw 0;
      position: fixed;
-     margin-bottom: 30%;
+     margin-bottom: 15%;
    }
 
    .scroll-up:first-of-type {
      padding: 1vw;
      border-width: 0 1vw 1vw 0;
      position: fixed;
-     margin-bottom: 30%;
+     margin-bottom: 15%;
    }
 
    #contacts>h3 {
@@ -615,5 +615,9 @@
 
    svg {
      width: 5vw;
+   }
+
+   .scroll-up {
+     margin-bottom: 12.5% !important;
    }
  }

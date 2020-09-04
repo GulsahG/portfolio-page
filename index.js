@@ -19,7 +19,7 @@ projects.forEach(project => {
 // fixes the typewriter effect animations
 window.setTimeout(() => {
     secondLine.style.display = "block";
-    firstLine.style.border = " 0vw solid black";
+    firstLine.style.border = "0vw solid black";
 }, 2000);
 
 // makes the next project active on button click

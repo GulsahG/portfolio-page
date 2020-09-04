@@ -349,7 +349,7 @@
  }
 
  .slide-img>.prev {
-  border-radius: 3px 0 0 3px;
+   border-radius: 3px 0 0 3px;
  }
 
  .slide-img>button:hover {
@@ -560,7 +560,7 @@
    }
 
    .project-description>p {
-     font-size: 2.5vw;
+     font-size: 2.65vw;
      width: 87.5%;
    }
 
@@ -604,7 +604,7 @@
    }
 
    #my-work {
-    margin-bottom: 12.5%;
+     margin-bottom: 12.5%;
    }
 
    #contacts>h3 {
@@ -620,6 +620,10 @@
    }
 
    svg {
-    width: 50%;
+     width: 50%;
+  }
+
+  .project-description>p {
+    font-size: 2vw;
   }
  }

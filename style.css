@@ -485,19 +485,19 @@
 
  @keyframes swingX {
    15% {
-     transform: translateX(5px);
+     transform: translateX(2.5px);
    }
 
    30% {
-     transform: translateX(-5px);
+     transform: translateX(-2.5px);
    }
 
    50% {
-     transform: translateX(3px);
+     transform: translateX(2.5px);
    }
 
    65% {
-     transform: translateX(-3px);
+     transform: translateX(-2.5px);
    }
 
    80% {

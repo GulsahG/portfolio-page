@@ -13,7 +13,7 @@
    letter-spacing: 0.06em;
    text-rendering: optimizeLegibility;
    font-feature-settings: "kern";
-   text-indent: 3.35vw;
+   text-indent: 7.5%;
    overflow-y: scroll;
    overflow-x: hidden;
    scroll-behavior: smooth;
@@ -50,7 +50,6 @@
 
  body {
    min-height: 100vh;
-   height: calc(var(--vh, 1vh) * 100);
    scroll-behavior: smooth;
    text-rendering: optimizeSpeed;
    line-height: 1.5;
@@ -175,10 +174,9 @@
  }
 
  nav {
-   width: 60vw;
-   height: 10vw;
+   width: 60%;
    display: block;
-   margin: 27% auto 0 auto;
+   margin: 27% auto 5% auto;
  }
 
  nav>ul {
@@ -188,7 +186,6 @@
    justify-content: center;
    vertical-align: middle;
    width: 100%;
-   height: 3.25vw;
    padding: 0.2vw;
    text-indent: 0;
    border: 0.1vw solid #FBAB6A;
@@ -200,8 +197,7 @@
 
  li {
    line-height: 1.5;
-   width: 20vw;
-   height: 95%;
+   width: 33.3%;
    text-align: center;
    font-size: 2vw;
    border: 0vw solid #7F2611;
@@ -221,7 +217,7 @@
 
  .typing-demo {
    margin: auto;
-   width: 18.5vw;
+   width: 18.5%;
    margin-top: 2%;
    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
    white-space: nowrap;
@@ -233,7 +229,7 @@
  }
 
  .typing-demo:first-of-type {
-   width: 36.5vw;
+   width: 36.5%;
  }
  
  .typing-demo:last-of-type {
@@ -242,13 +238,11 @@
  
  section {
    color: white;
-   min-height: 100vh;
-   height: calc(var(--vh, 1vh) * 100);
  }
 
  section>div {
    padding: 6% 0.5% 0.5% 0.5%;
-   width: 60vw;
+   width: 60%;
    display: block;
    margin: 0 auto 7.5% auto;
  }
@@ -265,7 +259,7 @@
  hr {
    border: 0;
    height: 0.4vw;
-   width: 60vw;
+   width: 60%;
    background: linear-gradient(to right,
        #7f2611,
        #8c482c,
@@ -288,7 +282,7 @@
  }
 
  #about-me>p {
-   width: 40vw;
+   width: 70%;
    display: block;
    font-size: 1.5vw;
    text-indent: 0;
@@ -296,14 +290,15 @@
  }
 
  #about-me>p:last-of-type {
-   width: 45vw;
+   width: 75%;
  }
 
  .project {
    display: flex;
    flex-direction: column;
-   height: 32vw;
    align-items: center;
+   width: 90%;
+   margin-left: auto;
  }
 
  .slide-img {
@@ -313,15 +308,14 @@
  }
 
  .project-img {
-   width: 39vw;
-   height: 21vw;
+   width: 75%;
    margin-bottom: 5%;
  }
 
  .project-description>p {
    text-indent: 0;
    margin-top: 1%;
-   width: 45vw;
+   width: 95%;
    font-size: 1.4vw;
    font-family: 'Judson', serif;
  }
@@ -428,25 +422,27 @@
    text-indent: 0;
    align-content: center;
    justify-content: center;
-   width: 60vw;
+   width: 70%;
+   margin: 0 auto;
  }
 
  .social-media>li {
    display: inline-block;
    vertical-align: middle;
-   width: 10vw;
+   width: 17.5%;
  }
 
  svg {
    stroke: white;
    padding: 0.2vw;
-   width: 7.5vw;
+   width: 80%;
    cursor: pointer;
    transition: 0.4s ease;
  }
 
  h3>svg {
    cursor: auto;
+   width: 10%;
  }
 
  svg:hover {
@@ -521,19 +517,15 @@
  @media only screen and (max-width: 768px) {
    .typing-demo {
      font-size: 3vw;
-     width: 23vw;
+     width: 23%;
    }
 
    .typing-demo:first-of-type {
-     width: 46vw;
+     width: 46%;
    }
 
    nav {
      margin-top: 35%;
-   }
-
-   nav>ul {
-     height: 5vw;
    }
 
    li {
@@ -541,7 +533,7 @@
    }
 
    div {
-     width: 70vw;
+     width: 100%;
    }
 
    div>h1 {
@@ -554,31 +546,31 @@
 
    #about-me>p {
      font-size: 2.5vw;
-     width: 58vw !important;
+     width: 67% !important;
    }
 
    .project {
-     width: 85vw;
+     width: 85%;
+     margin-left: auto;
    }
 
    .project-img {
-     width: 57.15vw;
-     height: 32.25vw;
+     width: 67%;
      margin-bottom: 15%;
    }
 
    .project-description>p {
      font-size: 2.5vw;
-     width: 75vw;
+     width: 87.5%;
    }
 
    #my-work {
-     width: 85vw;
-     margin-bottom: 40%;
+     width: 85%;
+     margin-bottom: 15%;
    }
 
    #about-me {
-     width: 85vw;
+     width: 85%;
    }
 
    .scroll-up:last-of-type {
@@ -611,16 +603,12 @@
     margin-bottom: 12.5%;
    }
 
-   .project-description>p {
-     width: 52vw;
-   }
-
    #contacts>h3 {
      margin-bottom: 0.5%;
    }
 
    svg {
-     width: 5vw;
+     width: 75%;
    }
 
    .scroll-up {

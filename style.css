@@ -463,6 +463,26 @@
    fill: #f48025;
  }
 
+ .active {
+   animation: show .5s;
+   animation-fill-mode: both;
+ }
+
+ .first {
+   animation: none;
+ }
+
+ @keyframes show {
+  from {
+      transform: scale(0.9);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
  @keyframes swingX {
    15% {
      transform: translateX(5px);

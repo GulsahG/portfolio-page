@@ -422,20 +422,20 @@
    text-indent: 0;
    align-content: center;
    justify-content: center;
-   width: 70%;
+   width: 100%;
    margin: 0 auto;
  }
 
  .social-media>li {
    display: inline-block;
    vertical-align: middle;
-   width: 17.5%;
+   width: 20%;
  }
 
  svg {
    stroke: white;
    padding: 0.2vw;
-   width: 80%;
+   width: 100%;
    cursor: pointer;
    transition: 0.4s ease;
  }
@@ -555,7 +555,7 @@
    }
 
    .project-img {
-     width: 67%;
+     width: 65%;
      margin-bottom: 15%;
    }
 
@@ -589,8 +589,12 @@
    }
 
    #contacts>h3 {
-     font-size: 2.5vw;
+     font-size: 3.5vw;
      margin-bottom: 1.5%;
+   }
+
+   svg {
+     width: 60%;
    }
  }
 
@@ -614,4 +618,8 @@
    .scroll-up {
      margin-bottom: 12.5% !important;
    }
+
+   svg {
+    width: 50%;
+  }
  }

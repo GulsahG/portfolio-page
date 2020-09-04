@@ -9,6 +9,7 @@ const codepen = document.querySelector('#codepen');
 const github = document.querySelector('#github');
 const secondLine = document.querySelector('.second-line');
 const firstLine = document.querySelector('.first-line');
+let projectImgs = document.querySelectorAll('.project-img');
 
 // makes the first project active, others hidden
 projects.forEach(project => {
@@ -67,3 +68,12 @@ codepen.addEventListener("click", function () {
     window.open("https://codepen.io/GulsahG/#");
 });
 
+
+// visits the project link on image click
+projectImgs.forEach(image => {
+    image.addEventListener("click", function () {
+        let targetElement = image.parentElement.parentElement.children[1].firstElementChild.firstElementChild;
+        const projectLink = targetElement.getAttribute("href");
+        window.open(projectLink);
+    });
+});

@@ -7,7 +7,8 @@ const discord = document.querySelector('#discord');
 const instagram = document.querySelector('#instagram');
 const codepen = document.querySelector('#codepen');
 const github = document.querySelector('#github');
-const secondLine = document.querySelector('.secondLine');
+const secondLine = document.querySelector('.second-line');
+const firstLine = document.querySelector('.first-line');
 
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 let vh = window.innerHeight * 0.01;
@@ -30,6 +31,7 @@ projects.forEach(project => {
 // makes the secondline not hidden after 2 seconds
 window.setTimeout(() => {
     secondLine.style.display = "block";
+    firstLine.style.border = " 0vw solid black";
 }, 2000);
 
 // makes the next project active on button click

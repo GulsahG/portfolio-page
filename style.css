@@ -443,15 +443,13 @@
 
  h3>svg {
    cursor: auto;
-   width: 10%;
+   width: 5.5%;
+   animation: spin 800ms ease infinite;
+   margin-bottom: 2%;
  }
 
  svg:hover {
    stroke: #f48025;
- }
-
- h3>svg:hover {
-   stroke: white;
  }
 
  #discord {
@@ -472,6 +470,12 @@
    animation: none;
  }
 
+ @keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+ }
+
  @keyframes show {
   from {
       transform: scale(0.9);
@@ -481,7 +485,7 @@
       transform: scale(1);
       opacity: 1;
   }
-}
+ }
 
  @keyframes swingX {
    15% {

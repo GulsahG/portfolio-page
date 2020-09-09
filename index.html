@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Gulsah Genc's portfolio page that describes what she does and shows her work.">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio Page</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Special+Elite&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Judson:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Judson:400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -53,7 +54,7 @@
                     <button class="next">&#10095;</button>
                 </div>
                 <div class="project-description">
-                    <h2><a href="https://github.com/GulsahG/react-neighbourhood-project" target="_blank">Neighbourhood
+                    <h2><a href="https://github.com/GulsahG/react-neighbourhood-project" target="_blank" rel="noopener">Neighbourhood
                             Project</a></h2>
                     <p>This is a Neighbourhood Map Project for my Front-End Web Developer Nanodegree on Udacity. The
                         goal of this project was to develop
@@ -67,7 +68,7 @@
                     <button class="next">&#10095;</button>
                 </div>
                 <div class="project-description">
-                    <h2><a href="https://gulsahg.github.io/fend-memory-game/" target="_blank">Memory Game Project</a>
+                    <h2><a href="https://gulsahg.github.io/fend-memory-game/" target="_blank" rel="noopener">Memory Game Project</a>
                     </h2>
                     <p>This is a Memory Game Project for my Front-End Web Developer Nanodegree on Udacity. The goal of
                         this project was to create a simple
@@ -81,7 +82,7 @@
                     <button class="next">&#10095;</button>
                 </div>
                 <div class="project-description">
-                    <h2><a href="https://gulsahg.github.io/fend-arcade-game/" target="_blank">Arcade Game Project</a>
+                    <h2><a href="https://gulsahg.github.io/fend-arcade-game/" target="_blank" rel="noopener">Arcade Game Project</a>
                     </h2>
                     <p>This is an Arcade Game Project for my Front-End Web Developer Nanodegree on Udacity. The goal of
                         this project was to create a an arcade
@@ -95,7 +96,7 @@
                     <button class="next">&#10095;</button>
                 </div>
                 <div class="project-description">
-                    <h2><a href="https://codepen.io/GulsahG/full/GRoXgbg" target="_blank">Product Landing Page</a></h2>
+                    <h2><a href="https://codepen.io/GulsahG/full/GRoXgbg" target="_blank" rel="noopener">Product Landing Page</a></h2>
                     <p>This is a Product Landing Page I've built for freeCodeCamp's Responsive Web Design Projects. I've
                         only used HTML and plain
                         CSS to implement my personal style and ideas.</p>
@@ -108,7 +109,7 @@
                     <button class="next">&#10095;</button>
                 </div>
                 <div class="project-description">
-                    <h2><a href="https://codepen.io/GulsahG/full/BYNObE" target="_blank">Local Playlist Page</a></h2>
+                    <h2><a href="https://codepen.io/GulsahG/full/BYNObE" target="_blank" rel="noopener">Local Playlist Page</a></h2>
                     <p>This is a playlist page I've built after following Wes Bos's tutorial on "LocalStorage and Event
                         Delegation" in his course #JavaScript30.
                         You can use the local storage implementation to store or remove song names on the page.</p>
@@ -215,10 +216,8 @@
             </ul>
         </div>
     </section>
-    <button onClick='window.location="#wrapper"' class="scroll-up"></button>
-    <button onClick='window.location="#wrapper"' class="scroll-up"></button> 
+    <button onClick='window.location="#wrapper"' class="scroll-up" aria-label="Scroll"></button>
+    <button onClick='window.location="#wrapper"' class="scroll-up" aria-label="Scroll"></button> 
     <script defer src="index.js"></script>
-    <script defer src="viewport-units-buggyfill.js"></script>
-    <script>window.viewportUnitsBuggyfill.init();</script>
 </body>
 </html>

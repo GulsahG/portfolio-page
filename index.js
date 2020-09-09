@@ -11,12 +11,6 @@ const secondLine = document.querySelector('.second-line');
 const firstLine = document.querySelector('.first-line');
 let projectImgs = document.querySelectorAll('.project-img');
 
-// makes the first project active, others hidden
-projects.forEach(project => {
-    project.classList.contains('first') ? project.classList.add('active')
-        : project.classList.add('hidden');
-});
-
 // fixes the typewriter effect animations
 window.setTimeout(() => {
     secondLine.style.display = "block";

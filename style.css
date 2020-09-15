@@ -61,6 +61,7 @@ body {
 li>a {
   color: #1A0903;
   text-decoration: none;
+  transition: color 0.4s;
 }
 
 :root {
@@ -360,8 +361,8 @@ div>h2>a {
   color: #1A0903;
 }
 
-.project-description>h2 {
-  transition: all 0.2s ease-in-out;
+.project-description>h2>a {
+  transition: color 0.4s ease-in-out;
 }
 
 .project-description>h2>a:hover {
@@ -385,6 +386,7 @@ div>h2>a {
   left: 90vw;
   padding: 0.3vw;
   margin: 0 0 0 0.45%;
+  transition: border-color 0.4s ease-in;
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
   backface-visibility: hidden;

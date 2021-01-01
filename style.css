@@ -58,46 +58,22 @@ body {
   background: black;
 }
 
+:root {
+  --black: #1A0903;
+  --light-orange: #FBAB6A;
+  --dark-orange:  #FE8927;
+  --darker-orange: #F48025;
+  --brown: #8C482C;
+  --dark-brown: #55190B;
+  --brick: #7F2611;
+}
+
 li>a {
-  color: #1A0903;
+  color: var(--black);
   text-decoration: none;
   transition: color 0.4s;
 }
 
-:root {
-  --custom-colour: #1A0903;
-}
-
-.light-orange {
-  --custom-colour: #FBAB6A;
-  color: var(--custom-colour);
-}
-
-.dark-orange {
-  --custom-colour: #FE8927;
-  color: var(--custom-colour);
-}
-
-.darker-orange {
-  --custom-colour: #F48025;
-  color: var(--custom-colour);
-}
-
-.brown {
-  --custom-colour: #8C482C;
-  background: var(--custom-colour);
-  padding: 0.1vw;
-}
-
-.brick {
-  --custom-colour: #7F2611;
-  color: var(--custom-colour);
-}
-
-.dark-brown {
-  --custom-colour: #55190B;
-  color: var(--custom-colour);
-}
 
 ul {
   list-style: none;
@@ -189,11 +165,10 @@ nav>ul {
   width: 100%;
   padding: 0.2vw;
   text-indent: 0;
-  border: 0.1vw solid #FBAB6A;
+  border: 0.1vw solid var(--light-orange);
   border-radius: 0.5em;
-  box-shadow: 0.1vw 0.1vw #7F2611, 0.2vw 0.2vw #7F2611, 0.3vw 0.3vw #7F2611;
-  --custom-colour: #FBAB6A;
-  background: var(--custom-colour);
+  box-shadow: 0.1vw 0.1vw var(--brick), 0.2vw 0.2vw var(--brick), 0.3vw 0.3vw var(--brick);
+  background: var(--light-orange);
 }
 
 li {
@@ -201,7 +176,7 @@ li {
   width: 33.3%;
   text-align: center;
   font-size: 2vw;
-  border: 0vw solid #7F2611;
+  border: 0vw solid var(--brick);
 }
 
 li>a:hover {
@@ -229,6 +204,70 @@ li>a:hover {
   font-size: 2.5vw;
 }
 
+.darkmode-toggle {
+  font-size: 1.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.darkmode--activated .project-description>p {
+  color: black;
+}
+
+.darkmode--activated .scroll-up {
+  border: solid black;
+  border-width: 0 0.3vw 0.3vw 0;
+}
+
+.darkmode--activated .first>.project-description>p {
+  color: white;
+}
+
+.darkmode--activated .slide-img>button {
+  color: var(--black);
+}
+
+.darkmode--activated #about-me>h1, .darkmode--activated .first>.project-description>h2>a {
+  --dark-orange: #0176D8;
+  --darker-orange: #0B7FDA;
+}
+
+.darkmode--activated .project-description>h2>a:hover {
+  color: var(--brown);
+}
+
+.darkmode--activated #about-me>p>a, .darkmode--activated #about-me>p>a:visited {
+  --dark-orange: #80D9EE;
+  --brick: #80D9EE;
+  color: black !important;
+}
+
+.darkmode--activated #about-me>p:nth-of-type(3)>span {
+  --brown: #73B7D3;
+  color: black !important;
+}
+
+.darkmode--activated .typing-demo, .darkmode--activated #contacts>h3, .darkmode--activated svg {
+  color: black;
+  stroke: black;
+}
+
+.darkmode--activated #discord>svg>path {
+  fill: black;
+}
+
+.darkmode--activated #discord>svg>path:hover {
+  fill: var(--dark-orange);
+}
+
+.darkmode--activated #contacts>h3>svg:first-of-type>g>path:first-of-type {
+  stroke: black !important;
+}
+
+.darkmode--activated .clown-eye {
+  fill: black !important;
+}
+
 .typing-demo:first-of-type {
   width: 36.5%;
 }
@@ -248,23 +287,14 @@ section>div {
   margin: 0 auto 7.5% auto;
 }
 
-section>div:hover {
-  border-width: 0.15vw;
-  border-style: solid;
-  border-image: linear-gradient(to bottom,
-      #7f2611,
-      #8c482c,
-      #f48025) 1 100%;
-}
-
 hr {
   border: 0;
   height: 0.4vw;
   width: 60%;
   background: linear-gradient(to right,
-      #7f2611,
-      #8c482c,
-      #f48025);
+      var(--brick),
+      var(--brown),
+      var(--darker-orange));
   margin: 5% auto;
   opacity: 0.5;
 }
@@ -290,8 +320,28 @@ div>h2>a {
   margin: 1.5% auto;
 }
 
+#about-me>p>a {
+  color: white !important;
+  background: var(--brown);
+  padding: 2.5px;
+  text-decoration: none;
+}
+
+#about-me>p>a:visited {
+  background: var(--brick);
+}
+
+#about-me>p:nth-of-type(3)>span {
+  background: var(--brown);
+  padding: 2.5px;
+}
+
 #about-me>p:last-of-type {
   width: 75%;
+}
+
+#about-me>h1 {
+  color: var(--dark-orange);
 }
 
 .project {
@@ -357,16 +407,15 @@ div>h2>a {
 }
 
 .slide-img>button:hover {
-  background: #FBAB6A;
-  color: #1A0903;
+  background: var(--light-orange);
+  color: var(--black);
 }
 
 .project-description>h2>a {
-  transition: color 0.4s ease-in-out;
+  color: var(--darker-orange);
 }
 
 .project-description>h2>a:hover {
-  color: #FBAB6A;
   cursor: pointer;
 }
 
@@ -377,7 +426,6 @@ div>h2>a {
 
 .scroll-up {
   border: solid white;
-  color: white;
   cursor: pointer;
   border-width: 0 0.3vw 0.3vw 0;
   display: block;
@@ -402,7 +450,7 @@ div>h2>a {
 }
 
 .scroll-up:hover {
-  border-color: #FBAB6A;
+  border-color: var(--light-orange);
   -webkit-animation-play-state: paused;
   -moz-animation-play-state: paused;
   -o-animation-play-state: paused;
@@ -453,7 +501,7 @@ h3>svg {
 }
 
 svg:hover {
-  stroke: #f48025;
+  stroke: var(--darker-orange);
 }
 
 #discord>svg>path {
@@ -462,7 +510,7 @@ svg:hover {
 }
 
 #discord>svg>path:hover {
-  fill: #f48025;
+  fill: var(--darker-orange);
 }
 
 .active {

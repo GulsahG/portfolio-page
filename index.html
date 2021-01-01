@@ -24,7 +24,7 @@
                 Gulsah Genc.
             </div>
         </div>
-        <nav>
+        <nav class="darkmode-ignore">
             <ul>
                 <li><a class="nav-link" href="#about-me">
                         <p>About Me</p>
@@ -40,15 +40,27 @@
     </header>
     <section id="contents">
         <div id="about-me">
-            <h1 class="dark-orange">Who am I?</h1>
+            <h1>Who am I?</h1>
             <p>I'm a 3rd year student in Computer Engineering in TED University, based in Turkey 💻 </p>
-            <p>Also a Front-End Web Developer Nanodegree Graduate in Udacity 🎓<br > </p>
-            <p>I'm currently focused on improving my skills in <span class="brown">JavaScript</span> and <span
-                    class="brown">React</span>.</p>
+            <p>Also a Front-End Web Developer for <a href="https://www.linkedin.com/company/weekiddo/" target="_blank" rel="noopener">WeeKiddo</a> <span class="darkmode-ignore">🦆</span><br > </p>
+            <p>I'm currently focused on improving my skills in <span>JavaScript</span> and <span>React</span>.</p>
         </div>
         <hr >
         <div id="my-work">
             <div class="project first active">
+                <div class="slide-img">
+                    <button class="prev">&#10094;</button>
+                    <img class="project-img" src="img/weekiddo.webp" onerror="this.src='img/weekiddo.png'" alt="Weekiddo website Image">
+                    <button class="next">&#10095;</button>
+                </div>
+                <div class="project-description">
+                    <h2><a href="https://weekiddo.com/" target="_blank" rel="noopener">WeeKiddo Company Website</a></h2>
+                    <p>This is the website for the start-up company I am currently working for as a Front-end Web Developer.
+                        The homepage has been built by me with HTML, CSS and JavaScript without any libraries.
+                    </p>
+                </div>
+            </div>
+            <div class="project hidden">
                 <div class="slide-img">
                     <button class="prev">&#10094;</button>
                     <img class="project-img" src="img/neighbourhood.webp" onerror="this.src='img/neighbourhood.png'" alt="Mapbox Project Image">
@@ -148,10 +160,10 @@
                         S192.033,181.77,196.169,181.77z"/>
                     <path style="fill:#081C1F;" d="M226.169,202.77c4.135,0,7.5-3.365,7.5-7.5s-3.365-7.5-7.5-7.5c-4.135,0-7.5,3.365-7.5,7.5
                         S222.033,202.77,226.169,202.77z"/>
-                    <path style="fill: white;" d="M345.683,63.993h37.5v37.5c0,4.142,3.357,7.5,7.5,7.5s7.5-3.358,7.5-7.5v-37.5h37.5
+                    <path class="clown-eye" style="fill: white;" d="M345.683,63.993h37.5v37.5c0,4.142,3.357,7.5,7.5,7.5s7.5-3.358,7.5-7.5v-37.5h37.5
                         c4.143,0,7.5-3.358,7.5-7.5s-3.357-7.5-7.5-7.5h-37.5v-37.5c0-4.142-3.357-7.5-7.5-7.5s-7.5,3.358-7.5,7.5v37.5h-37.5
                         c-4.143,0-7.5,3.358-7.5,7.5S341.54,63.993,345.683,63.993z"/>
-                    <path style="fill:white;" d="M37.119,63.993h37.5v37.5c0,4.142,3.357,7.5,7.5,7.5s7.5-3.358,7.5-7.5v-37.5h37.5
+                    <path class="clown-eye" style="fill:white;" d="M37.119,63.993h37.5v37.5c0,4.142,3.357,7.5,7.5,7.5s7.5-3.358,7.5-7.5v-37.5h37.5
                         c4.143,0,7.5-3.358,7.5-7.5s-3.357-7.5-7.5-7.5h-37.5v-37.5c0-4.142-3.357-7.5-7.5-7.5s-7.5,3.358-7.5,7.5v37.5h-37.5
                         c-4.143,0-7.5,3.358-7.5,7.5S32.977,63.993,37.119,63.993z"/>
                     <path style="fill:#081C1F;" d="M469.891,316.826c-1.07-19.336-9.605-37.098-24.035-50.013c-14.43-12.917-33.042-19.44-52.36-18.371
@@ -218,7 +230,26 @@
         </div>
     </section>
     <button onClick='window.location="#wrapper"' class="scroll-up" aria-label="Scroll"></button>
-    <button onClick='window.location="#wrapper"' class="scroll-up" aria-label="Scroll"></button> 
     <script  type="text/javascript" src="index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        const options = {
+            bottom: '64px', // default: '32px'
+            right: 'unset', // default: '32px'
+            left: '32px', // default: 'unset'
+            time: '0.5s', // default: '0.3s'
+            mixColor: 'white', // default: '#fff'
+            backgroundColor: 'black',  // default: '#fff'
+            buttonColorDark: 'white',  // default: '#100f2c'
+            buttonColorLight: 'black', // default: '#fff'
+            saveInCookies: false, // default: true,
+            label: '🌓', // default: ''
+            autoMatchOsTheme: false // default: true
+        }
+        function addDarkmodeWidget() {
+            new Darkmode(options).showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+    </script>
 </body>
 </html>

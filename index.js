@@ -1,4 +1,3 @@
-const projects = document.querySelectorAll('.project');
 const prevButtons = document.querySelectorAll('.prev');
 const nextButtons = document.querySelectorAll('.next');
 const firstProject = document.querySelector('.first');

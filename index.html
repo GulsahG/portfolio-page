@@ -54,7 +54,7 @@
                     <button class="next">&#10095;</button>
                 </div>
                 <div class="project-description">
-                    <h2><a href="https://weekiddo.com/" target="_blank" rel="noopener">WeeKiddo Company Website</a></h2>
+                    <h2><a href="https://weekiddo.com/" target="_blank" rel="noopener">WeeKiddo Website</a></h2>
                     <p>This is the website for the start-up company I am currently working for as a Front-end Web Developer.
                         The homepage has been built by me with HTML, CSS and JavaScript without any libraries.
                     </p>
@@ -249,7 +249,9 @@
         function addDarkmodeWidget() {
             new Darkmode(options).showWidget();
         }
-        window.addEventListener('load', addDarkmodeWidget);
+
+        if(screen.width > 768) 
+            window.addEventListener('load', addDarkmodeWidget)
     </script>
 </body>
 </html>
